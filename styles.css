@@ -3,7 +3,7 @@ html, body {
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif;
     padding: 0;
-    background-image: url('./asset/thumb-1920-429165.jpg'); /* Change this */
+    background-image: url('https://th.bing.com/th/id/OIP.jtrRP-LUHPbxXb_xBXEt4wHaEK?rs=1&pid=ImgDetMain'); /* Change this */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
