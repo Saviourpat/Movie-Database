@@ -1,0 +1,129 @@
+html, body {
+    height: 100%; /* Ensure the body takes up full height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-image: url('./asset/thumb-1920-429165.jpg'); /* Change this */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header, footer {
+    background-color: linear-gradient(to top left, white, lightblue,pink); /* Semi-transparent dark background */
+    color: rgb(26, 1, 1);
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 10px;
+    max-width:100%; /* Optional: limit the width */
+    margin: 10px auto; /* Center the main content */
+}
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.movie img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    min-height: 60vh; /* Full viewport height */
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+#movieContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Mobile styles */
+@media (max-width: 600px) {
+    input {
+        width: 100%; /* Full width for input on mobile */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .movie {
+        width: 100%; /* Full width for movie cards on mobile */
+    }
+
+    main {
+        padding: 5px; /* Reduced padding for smaller screens */
+    }
+
+    header, footer {
+        padding: 15px; /* Reduced padding for header and footer */
+    }
+}
+
+/* Tablets and smaller laptops (min-width: 600px) */
+@media (min-width: 600px) {
+    input {
+        width: 250px; /* Slightly smaller input width */
+    }
+
+    .movie {
+        width: calc(50% - 30px); /* Two movie cards per row with spacing */
+    }
+
+    main {
+        padding: 15px; /* Adjust padding for tablets */
+    }
+}
+
+/* Desktops and larger laptops (min-width: 900px) */
+@media (min-width: 900px) {
+    input {
+        width: 300px; /* Standard input width */
+    }
+
+    .movie {
+        width: 200px; /* Keep original width for larger screens */
+    }
+
+    main {
+        padding: 20px; /* Standard padding */
+    }
+}
+
+/* Extra large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px; /* Limit the width on large screens */
+    }
+
+    main {
+        padding: 30px; /* Increase padding for larger screens */
+    }
+}
